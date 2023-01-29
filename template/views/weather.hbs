@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     {{>links}}
+   
+    <title>Weather App</title>
+</head>
+<body>
+       <!-- navbar section -->
+
+       {{>navbar}}
+
+       <!-- content section -->
+
+       <div class="main_weather">
+             <div class="search">
+               <form class="search_form"> 
+                   <input type="text" placeholder="Enter Your City" autocomplete="off" id="cityname" >
+                   <input type="submit" value="search" class="seach_btn" id="submitbtn">
+               </form>
+             </div>
+             <div class="weather">
+                  <div class="top">
+                        <p id="today">Saturday</p>
+                        <p id="today_date">28, JAN</p>
+                  </div>
+                  <div class="middle">
+                        <p id="city_name">Get your output here</p>
+                        <div class="middle_top datahide">
+                              <p id="jh"> <span id="temp">0</span><sup>o</sup>c </p>
+                              <div class="info">
+                                 <p  id="temp_status"><i class="fa-duotone fa-smoke"></i></p>
+                                 <h1 id="info_p">sunny</h1>
+                              </div>
+                        </div>
+                  </div>
+             </div>
+       </div>
+       
+
+       {{!-- footer section --}}
+
+       {{>footer}}
+
+       <script src='js/weather.js'></script>
+    
+</body>
+</html>
